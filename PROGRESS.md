@@ -25,10 +25,18 @@ This document is the single source of truth for tracking progress, effort, and v
 
 | ID | Title | Status | Start Date | PR Opened | Merged | Hours | Difficulty (1-5) | PR Link | Mentor Notes |
 |---|---|---|---|---|---|---|---|---|---|
-| `EX-00-1` | Terminal Git & SSH Setup | ⚪ Not Started | - | - | - | - | - | - | - |
+| `EX-00-1` | Terminal Git & SSH Setup | 🟡 In Progress | 2026-11-03 | - | - | 2 | 1 | - | - |
 | `EX-00-2` | Branching & Conflict Resolution | ⚪ Not Started | - | - | - | - | - | - | - |
 | `EX-00-3` | Pull Request & Code Review Workflow | ⚪ Not Started | - | - | - | - | - | - | - |
 
+### EX-00-1 — My Experience
+
+- Configured Git and its default editor.
+- Created an SSH key and connected to GitHub.
+- Resolved an SSH connection issue by using port 443.
+- Created a Git alias.
+- Created a personal branch and my first atomic commit.
+  
 ---
 
 ## 🌐 Stage 01: Backend Fundamentals
