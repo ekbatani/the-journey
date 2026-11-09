@@ -18,9 +18,20 @@ jobs:
       with:
         java-version: '21'
         distribution: 'temurin'
-        cache: maven
+        # No `cache: maven` here: setup-java fails when the repo has no pom.xml yet.
 
     - name: Verify Environment
       run: |
         java -version
         python3 tools/tracker.py
+
+    # Runs only once a Maven project (pom.xml) exists somewhere in the repository.
+    - name: Build & Test Maven Projects
+      if: hashFiles('**/pom.xml') != ''
+      run: |
+        find . -name pom.xml -not -path '*/target/*' -print0 |
+          while IFS= read -r -d '' pom; do
+            echo "::group::mvn verify $(dirname "$pom")"
+            mvn -B -ntp -f "$pom" verify
+            echo "::endgroup::"
+          done

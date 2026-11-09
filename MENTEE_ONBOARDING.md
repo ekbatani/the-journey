@@ -17,11 +17,17 @@ Welcome to **The Journey**! Before diving into code, let's configure your local 
 
 ### 2. Java 21 LTS SDK (via SDKMAN! or Temurin)
 Modern backend Java currently standards on **Java 21 LTS**.
-* On macOS/Linux, install [SDKMAN!](https://sdkman.io/):
+* **Windows**: install Eclipse Temurin 21 with `winget` (in PowerShell or Terminal), then open a **new** terminal window:
+  ```powershell
+  winget install EclipseAdoptium.Temurin.21.JDK
+  ```
+  *(Or download the `.msi` from [adoptium.net](https://adoptium.net/) and tick "Set JAVA_HOME" during install.)*
+* **macOS/Linux**: install [SDKMAN!](https://sdkman.io/), then pick the newest `21.x.x-tem` from `sdk list java`:
   ```bash
   curl -s "https://get.sdkman.io" | bash
   source "$HOME/.sdkman/bin/sdkman-init.sh"
-  sdk install java 21.0.2-tem
+  sdk list java
+  sdk install java 21.0.x-tem   # replace x with the newest 21 version listed
   ```
 * Verify installation:
   ```bash
@@ -56,8 +62,9 @@ cd the-journey
 To test your Git setup and the PR workflow:
 1. Create a branch:
    ```bash
-   git checkout -b exercise/00-1-terminal-git
+   git checkout -b exercise/00-1-git-setup
    ```
-2. Navigate to [`curriculum/00-git-and-github/README.md`](curriculum/00-git-and-github/README.md) and [`exercises/00-git-workflow/`](exercises/00-git-workflow/).
-3. Complete the task in `exercises/00-git-workflow/ex-00-1/`.
-4. Open your first Pull Request!
+   *(Branch names follow the `exercise/<id>-<short-description>` convention from [CONTRIBUTING.md](CONTRIBUTING.md).)*
+2. Read [`curriculum/00-git-and-github/README.md`](curriculum/00-git-and-github/README.md).
+3. Complete the `EX-00-1` tasks described in [`exercises/00-git-workflow/README.md`](exercises/00-git-workflow/README.md). Put any files you create directly in `exercises/00-git-workflow/` (e.g. `ex-00-1-test.txt`).
+4. Push your branch and open your first Pull Request — never upload files straight to `main` through the GitHub website; every change goes through a PR so it can be reviewed.

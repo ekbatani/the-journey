@@ -12,11 +12,11 @@ This document is the single source of truth for tracking progress, effort, and v
 
 ## 📈 Summary Dashboard
 
-* **Total Tasks**: 35 (31 Exercises + 4 Milestones)
-* **Completed**: 0 / 35 (0.0%)
-* **Total Hours Logged**: 0.0 hrs
-* **Average Cycle Time**: - days
-* *Note: Run `python3 tools/tracker.py` to auto-update these summary statistics.*
+* **Total Tasks**: 40 (36 Exercises + 4 Milestones)
+* **Completed**: 1 / 40 (2.5%)
+* **Total Hours Logged**: 2.0 hrs
+* **Average Cycle Time**: 1.0 days
+* *Note: Run `python tools/tracker.py --write` to recalculate these summary statistics from the tables below.*
 
 ---
 
@@ -25,7 +25,7 @@ This document is the single source of truth for tracking progress, effort, and v
 
 | ID | Title | Status | Start Date | PR Opened | Merged | Hours | Difficulty (1-5) | PR Link | Mentor Notes |
 |---|---|---|---|---|---|---|---|---|---|
-| `EX-00-1` | Terminal Git & SSH Setup | 🟡 In Progress | 2026-11-03 | - | - | 2 | 1 | - | - |
+| `EX-00-1` | Terminal Git & SSH Setup | 🟢 Mastered | 2026-11-03 | 2026-11-04 | 2026-11-04 | 2 | 1 | [#1](https://github.com/ekbatani/the-journey/pull/1) | Clean branch, atomic conventional commits; solved SSH block via port 443 |
 | `EX-00-2` | Branching & Conflict Resolution | ⚪ Not Started | - | - | - | - | - | - | - |
 | `EX-00-3` | Pull Request & Code Review Workflow | ⚪ Not Started | - | - | - | - | - | - | - |
 
@@ -44,7 +44,7 @@ This document is the single source of truth for tracking progress, effort, and v
 
 | ID | Title | Status | Start Date | PR Opened | Merged | Hours | Difficulty (1-5) | PR Link | Mentor Notes |
 |---|---|---|---|---|---|---|---|---|---|
-| `EX-01-1` | HTTP/HTTPS & cURL Deep Dive | ⚪ Not Started | - | - | - | - | - | - | - |
+| `EX-01-1` | HTTP/HTTPS & cURL Deep Dive | 🟡 In Progress | 2026-11-07 | - | - | - | - | - | Notes uploaded directly to `main` without a PR; redo locally in own words and submit via PR |
 | `EX-01-2` | RESTful API & OpenAPI Specification | ⚪ Not Started | - | - | - | - | - | - | - |
 | `EX-01-3` | Raw Java HTTP Socket Server | ⚪ Not Started | - | - | - | - | - | - | - |
 
